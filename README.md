@@ -9,6 +9,8 @@ Before alignment, small molecules, ions, etc., in PDB structure files must be re
 # Algorithm Notes
 Due to residue deletions or redundant gaps present in some protein structures, the algorithm includes specialized handling for these issues. Sliding alignment may encounter problems when renumbering such structures, so the local alignment algorithm is strongly recommended for renumbering in these cases.
 
+---
+
 使用滑动配对或者局部配对（SW）进行残基的匹配。参考序列可以是结构文件或者FASTA序列，最好不包含gap，即空缺的残基。
 
 # 注意
